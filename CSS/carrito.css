@@ -1,0 +1,464 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Encabezado */
+  header {
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-bottom: 4px solid #E75A1B;
+    flex-wrap: wrap;
+  }
+  
+  .login-link {
+    color: #F4F1EE;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .menu-principal {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .menu-item {
+    color: #F4F1EE;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .menu-item:hover {
+    color: #E75A1B;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; 
+    color: #000000; 
+  }
+  
+  
+  header {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-bottom: 4px solid #E75A1B;
+    flex-wrap: wrap;
+  }
+  
+  .menu-principal {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  background-color: #000;
+  padding: px 0;
+  flex-wrap: wrap;
+  }
+  
+  .menu-item {
+  color: #F4F1EE;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  font-size: 14px; /* Texto más pequeño */
+  }
+  
+  .menu-item:hover {
+  color: #E75A1B;
+  }
+  
+  .icono-svg {
+  transition: color 0.3s ease, transform 0.3s ease;
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  fill: currentColor;
+  }
+  
+  .menu-item:hover .icono-svg {
+  transform: scale(1.1);
+  }
+
+  nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #F4F1EE;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #E75A1B;
+  }
+  
+  .login-link {
+  display: flex;
+  font-weight: 700;
+  font-family: 'Oswald', sans-serif;
+  align-items: center;
+  text-decoration: none;
+  color: #F4F1EE;       /* color inicial igual que los otros enlaces */
+  font-weight: bold;
+  transition: color 0.3s;  /* transición suave del color */
+  font-size: 20px
+  }
+  
+  .login-link:hover {
+  color: #E75A1B;       /* color naranja cuando pasas el mouse */
+  }
+
+  
+
+
+
+  
+
+
+
+  body {
+    font-family: 'Oswald', sans-serif;
+    background-color: white;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .linea-negra {
+    display: block;
+    width: 88%;             /* Ajusta el ancho como desees */
+    height: 3px;
+    background-color: black;
+    margin: 5px auto;      /* Centrada horizontalmente */
+    border: none;           /* IMPORTANTE: quita el borde de <hr> si lo usas */
+  }
+  
+  
+  
+  .pasos-compra {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 10px auto; /* espacio arriba y abajo centrado */
+    padding: 5px 0;     /* espacio interno arriba y abajo */
+    max-width: 90%;      /* opcional: evita que se desborde en pantallas pequeñas */
+  }
+
+
+  .pasos-compra .activo {
+    color: #E75A1B;
+  }
+  
+  .carrito-contenido {
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  .carrito-img {
+    background-image: url('../Imagenes/Iconos/carrito.jpg'); /* Aquí colocas tu imagen */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+  }
+  
+  .carrito-contenido h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .carrito-contenido p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  .botones-carrito {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .btn-negro, .btn-blanco {
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: 2px solid black;
+  }
+  
+  .btn-negro {
+    background-color: black;
+    color: white;
+  }
+  
+  .btn-negro:hover {
+    background-color: #333;
+  }
+  
+  .btn-blanco {
+    background-color: white;
+    color: black;
+  }
+  
+  .btn-blanco:hover {
+    background-color: #E75A1B;
+    color: white;
+    border-color: #E75A1B;
+  }
+  
+  
+
+  /*DISPOSITIVOS*/
+
+/* Estilos para pantallas menores o iguales a 768px (tablets y móviles grandes) */
+@media (max-width: 768px) {
+  
+  header {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between; /* Separar logo y menú */
+  align-items: center; /* Centrar vertical */
+  padding: 15px 16px;
+  border-bottom: 4px solid #E75A1B;
+  flex-wrap: wrap;
+  gap: 15px; /* Un poco de espacio entre elementos si se envuelven */
+}
+
+.menu-principal {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  background-color: #000;
+  padding: px 0; /* Aquí está mal, "px" sin valor */
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  color: #F4F1EE;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #F4F1EE;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+}
+
+
+
+
+
+
+
+.productos-carrito {
+  padding: 40px 30px;
+  max-width: 1200px; /* Aumentamos el ancho */
+  margin: 0 auto;
+}
+
+.productos-carrito h2 {
+  font-size: 30px; /* Más grande */
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.tabla-carrito {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+.tabla-carrito th,
+.tabla-carrito td {
+  padding: 16px 12px; /* Más espacio interno */
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  font-size: 16px; /* Más grande */
+}
+
+.tabla-carrito th {
+  background-color: #000;
+  color: white;
+  font-size: 17px; /* También un poco más grande */
+}
+
+.total-carrito {
+  text-align: right;
+  font-size: 20px; /* Más grande */
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.total-carrito p {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+  .tabla-carrito {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  .tabla-carrito thead {
+    display: none;
+  }
+
+  .tabla-carrito tr {
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .tabla-carrito td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .tabla-carrito td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #333;
+    flex: 1;
+    text-align: left;
+    padding-right: 10px;
+  }
+
+  .total-carrito {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .botones-carrito {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-negro, .btn-blanco {
+    width: 90%;
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+}
+
+.tabla-carrito td,
+.tabla-carrito th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .tabla-carrito, 
+  .tabla-carrito thead, 
+  .tabla-carrito tbody, 
+  .tabla-carrito th, 
+  .tabla-carrito td, 
+  .tabla-carrito tr {
+    display: block;
+    width: 100%;
+  }
+
+  .tabla-carrito thead {
+    display: none; /* Ocultamos encabezado en móvil */
+  }
+
+  .tabla-carrito tr {
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+
+  .tabla-carrito td {
+    text-align: left;
+    padding: 8px 10px;
+    position: relative;
+  }
+
+  .tabla-carrito td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+}
+
+
+.pedido {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 10px;
+  background-color: #fdfdfd;
+}
+
+.pedido-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 10px 0;
+}

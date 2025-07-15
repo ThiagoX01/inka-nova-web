@@ -1,0 +1,145 @@
+/* Fondo para toda la pantalla */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Esto evita que se pueda hacer scroll */
+}
+
+.fondo-login {
+    background-image: url('../Imagenes/Banner/BannerSesion1.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cuadro blanco centrado con fondo oscuro semitransparente */
+.formulario-login {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semitransparente */
+    padding: 40px 40px 20px; /* Ajuste en el padding-bottom */
+    border-radius: 10px;
+    text-align: center;
+    color: #F4F1EE; /* Texto claro */
+    width: 90%;
+    max-width: 400px;
+    margin-top: 50px; /* Ajusta la posición de todo el cuadro */
+}
+
+/* Títulos */
+.formulario-login h2, .formulario-registro h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #E75A1B;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+/* Formularios */
+.formulario-login form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Inputs */
+.formulario-login input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Botón */
+.formulario-login button {
+    background-color: #E75A1B;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario-login button:hover {
+    background-color: #d94d0f;
+}
+
+/* Opciones extra (enlaces) */
+.opciones-extra {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.opciones-extra a {
+    font-size: 18px;
+    color: #E75A1B;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.opciones-extra a:hover {
+    color: #d94d0f;
+}
+
+.opciones-extra p {
+    margin-top: 10px;
+    color: #F4F1EE;
+}
+
+.contenedor-logo {
+    position: relative;
+    width: 100%;
+    height: 0;
+    margin-bottom: 30px; /* Asegura que haya espacio debajo */
+}
+
+.logo-formulario {
+    position: absolute;
+    top: -99px;  /* Ajusta esta distancia para que el logo se suba más */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110px;  /* Aumentamos un poco más el tamaño */
+    height: auto;
+    cursor: pointer;
+}
+
+/* Para hacer que el logo sea un botón */
+.contenedor-logo a {
+    display: inline-block; /* Asegúrate de que el enlace tenga espacio alrededor */
+    cursor: pointer; /* Cambia el cursor cuando el usuario pase el mouse sobre el logo */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Suaviza la animación */
+    position: relative; /* Para evitar desplazamientos */
+}
+
+/* Efecto de hover */
+.contenedor-logo a:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del logo */
+    opacity: 0.8; /* Reduce ligeramente la opacidad */
+    z-index: 1; /* Asegura que el logo quede por encima de otros elementos */
+}
+
+/* Estilos para la imagen del logo */
+.contenedor-logo a img {
+    display: block; /* Eliminar cualquier espacio extra alrededor de la imagen */
+    border-radius: 5px; /* Bordes redondeados (opcional) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil para hacerlo más prominente */
+    transition: box-shadow 0.3s ease;
+}
+
+/* Efecto de hover para la imagen */
+.contenedor-logo a:hover img {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al pasar el mouse */
+}
+
+/* Opcional: agregar fondo al pasar el mouse (si te gusta ese efecto) */
+.contenedor-logo a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo sutil al pasar el mouse */
+    border-radius: 50%; /* Hace que el fondo sea redondeado (solo si el logo es cuadrado) */
+}

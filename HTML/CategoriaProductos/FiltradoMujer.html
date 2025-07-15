@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categorías Hombre - INKA NOVA</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../CSS/categorias.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <div style="display: flex; align-items: center; gap: 20px;">
+       
+        <a href="inicio-sesion.html" class="login-link">
+            <img src="../../Imagenes/Iconos/Persona.png" alt="Icono Persona" style="width: 27px; height: 27px; margin-right: 5px;">
+            INICIAR SESION
+        </a>    
+    </div>
+
+
+<nav class="menu-principal">
+<!-- Hombre -->
+<a href="../productos-hombre.html" class="menu-item" aria-label="Hombre">
+<svg class="icono-svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+  <circle cx="12" cy="7" r="4"/>
+  <line x1="12" y1="11" x2="12" y2="22" stroke="currentColor" stroke-width="2"/>
+  <line x1="7" y1="22" x2="17" y2="22" stroke="currentColor" stroke-width="2"/>
+</svg>
+<span>HOMBRE</span>
+</a>
+
+<!-- Mujer -->
+<a href="../productos-mujer.html" class="menu-item" aria-label="Mujer">
+<svg class="icono-svg" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24" height="24">
+  <circle cx="12" cy="7" r="4"/>
+  <line x1="12" y1="11" x2="12" y2="18" />
+  <line x1="9" y1="21" x2="15" y2="21" />
+  <line x1="9" y1="18" x2="15" y2="18" />
+</svg>
+<span>MUJER</span>
+</a>
+
+<!-- Carrito -->
+<a href="../carrito.html" class="menu-item" aria-label="Carrito">
+<svg class="icono-svg" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24" height="24">
+  <circle cx="9" cy="21" r="1"/>
+  <circle cx="20" cy="21" r="1"/>
+  <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+</svg>
+<span>CARRITO</span>
+</a>
+
+<!-- Tus pedidos -->
+<a href="../pedidos.html" class="menu-item" aria-label="Tus pedidos">
+<svg class="icono-svg" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24" height="24">
+  <line x1="4" y1="6" x2="20" y2="6"/>
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <line x1="4" y1="18" x2="20" y2="18"/>
+</svg>
+<span>TUS PEDIDOS</span>
+</a>
+
+<!-- Contacto -->
+<a href="../../index.html#contacto" class="menu-item" aria-label="Contáctanos">
+<svg class="icono-svg" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24" height="24">
+  <path d="M18 8a6 6 0 0 0-12 0v7a6 6 0 0 0 12 0z"/>
+  <line x1="12" y1="15" x2="12" y2="15"/>
+  <path d="M12 22v-3"/>
+</svg>
+<span>CONTACTO</span>
+</a>
+</nav>
+  </header>
+
+  
+<a href="../index.html" class="banner-link">
+  <div class="banner-container">
+    <div class="banner-slide fade">
+      <img src="../../Imagenes/Banner/InkaNovaObscuro.png" alt="Banner 1">
+    </div>
+    <div class="banner-slide fade">
+      <img src="../../Imagenes/Banner/InkaNovaClaro.png" alt="Banner 2">
+    </div>
+  </div>
+</a>
+
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    const slides = document.getElementsByClassName("banner-slide");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1; }
+    slides[slideIndex - 1].style.display = "block";
+
+    setTimeout(showSlides, 4000); // Cambia cada 4 segundos
+  }
+</script>
+
+<div class="filtros-categorias">
+  <button class="filtro-btn active" data-filtro="Polos">POLOS</button>
+  <button class="filtro-btn" data-filtro="Tops">TOPS</button>
+  <button class="filtro-btn" data-filtro="Blusa">BLUSAS</button>
+  <button class="filtro-btn" data-filtro="Casacas">CASACAS</button>
+</div>
+
+
+    <section class="productos-mujeres">
+        <h2 class="categoria"></h2>
+        <div class="contenedor-productos">
+            <div class="producto" 
+     data-id="m01"
+     data-img="../../Imagenes/Prendas/Mujer/PoloVintageTheSmiths.png"
+     data-nombre="Polo Vintage The Smiths"
+     data-precio="S/ 119.90"
+     data-marca="Inka Nova"
+     data-modelo="Polos"
+     data-tipo="Casual"
+     data-genero="Mujer"
+     data-material="Algodón"
+     data-estilo="Retro"
+     data-mangas="Manga Corta"
+     data-temporada="Todo el año">
+  <img src="../../Imagenes/Prendas/Mujer/PoloVintageTheSmiths.png" alt="Polo Vintage The Smiths">
+  <button>AGREGAR</button>
+  <h3>Polo Vintage The Smiths</h3>
+  <p>S/ 119.90</p>
+</div>
+
+<div class="producto"
+     data-id="m02"
+     data-img="../../Imagenes/Prendas/Mujer/CamisetaMangaCortaConCuelloCorazonFruncido.png"
+     data-nombre="Camiseta Manga Corta con Cuello Corazón Fruncido"
+     data-precio="S/ 119.90"
+     data-marca=""
+     data-modelo="Camiseta"
+     data-tipo="Polos"
+     data-genero="Mujer"
+     data-material=""
+     data-estilo=""
+     data-mangas="Manga Corta"
+     data-temporada="Todo el año">
+  <img src="../../Imagenes/Prendas/Mujer/CamisetaMangaCortaConCuelloCorazonFruncido.png" alt="Camiseta Manga Corta con Cuello Corazón Fruncido">
+  <button>AGREGAR</button>
+  <h3>Camiseta Manga Corta con Cuello Corazón Fruncido</h3>
+  <p>S/ 119.90</p>
+</div>
+
+<div class="producto"
+     data-id="m03"
+     data-img="../../Imagenes/Prendas/Mujer/CamisetaSinMangaAtigrado.png"
+     data-nombre="Camiseta Sin Manga Atigrado"
+     data-precio="S/ 119.90"
+     data-marca="Inka Nova"
+     data-modelo="Camiseta"
+     data-tipo="Tops"
+     data-genero="Mujer"
+     data-material=""
+     data-estilo="Atigrado"
+     data-mangas="Sin Manga"
+     data-temporada="Todo el año">
+  <img src="../../Imagenes/Prendas/Mujer/CamisetaSinMangaAtigrado.png" alt="Camiseta Sin Manga Atigrado">
+  <button>AGREGAR</button>
+  <h3>Camiseta Sin Manga Atigrado</h3>
+  <p>S/ 119.90</p>
+</div>
+
+<div class="producto"
+     data-id="m04"
+     data-img="../../Imagenes/Prendas/Mujer/CamisetaHolgadaMangaAcampanada.png"
+     data-nombre="Camiseta Holgada Manga Acampanada"
+     data-precio="S/ 119.90"
+     data-marca="Inka Nova"
+     data-modelo="Camiseta"
+     data-tipo="Blusa"
+     data-genero="Mujer"
+     data-material=""
+     data-estilo="Holgada"
+     data-mangas="Manga Acampanada"
+     data-temporada="Todo el año">
+  <img src="../../Imagenes/Prendas/Mujer/CamisetaHolgadaMangaAcampanada.png" alt="Camiseta Holgada Manga Acampanada">
+  <button>AGREGAR</button>
+  <h3>Camiseta Holgada Manga Acampanada</h3>
+  <p>S/ 119.90</p>
+</div>
+
+<div class="producto"
+     data-id="m05"
+     data-img="../../Imagenes/Prendas/Mujer/CamisaMangaAcampanada.png"
+     data-nombre="Top Tirantes Cruzados"
+     data-precio="S/ 119.90"
+     data-marca="Inka Nova"
+     data-modelo="Top"
+     data-tipo="Blusa"
+     data-genero="Mujer"
+     data-material=""
+     data-estilo=""
+     data-mangas="Tirantes Cruzados"
+     data-temporada="Todo el año">
+  <img src="../../Imagenes/Prendas/Mujer/CamisaMangaAcampanada.png" alt="Top Tirantes Cruzados">
+  <button>AGREGAR</button>
+  <h3>Top Tirantes Cruzados</h3>
+  <p>Marca: Inka Nova</p>
+  <p>S/ 119.90</p>
+</div>
+
+<div class="producto"
+     data-id="m06"
+     data-img="../../Imagenes/Prendas/Mujer/TopTiranteBlanco.png"
+     data-nombre="Top Tirante Blanco"
+     data-precio="S/ 119.90"
+     data-marca="Inka Nova"
+     data-modelo="Top"
+     data-tipo="Tops"
+     data-genero="Mujer"
+     data-material=""
+     data-estilo=""
+     data-mangas="Tirante"
+     data-temporada="Todo el año">
+  <img src="../../Imagenes/Prendas/Mujer/TopTiranteBlanco.png" alt="Top Tirante Blanco">
+  <button>AGREGAR</button>
+  <h3>Top Tirante Blanco</h3>
+  <p>S/ 119.90</p>
+</div>
+
+<div class="producto"
+     data-id="m07"
+     data-img="../../Imagenes/Prendas/Mujer/BlusaCuelloAsimetrico.png"
+     data-nombre="Blusa Cuello Asimétrico"
+     data-precio="S/ 119.90"
+     data-marca="Inka Nova"
+     data-modelo="Blusa"
+     data-tipo="Blusa"
+     data-genero="Mujer"
+     data-material=""
+     data-estilo="Asimétrico"
+     data-mangas=""
+     data-temporada="Todo el año">
+  <img src="../../Imagenes/Prendas/Mujer/BlusaCuelloAsimetrico.png" alt="Blusa Cuello Asimétrico">
+  <button>AGREGAR</button>
+  <h3>Blusa Cuello Asimétrico</h3>
+  <p>S/ 119.90</p>
+</div>
+
+<div class="producto"
+     data-id="m08"
+     data-img="../../Imagenes/Prendas/Mujer/TopCortoCueroRojo.png"
+     data-nombre="Top Corto Cuero Rojo"
+     data-precio="S/ 119.90"
+     data-marca="Inka Nova"
+     data-modelo="Top"
+     data-tipo="Tops"
+     data-genero="Mujer"
+     data-material="Cuero"
+     data-estilo="Corto"
+     data-mangas="Tirantes"
+     data-temporada="Todo el año">
+  <img src="../../Imagenes/Prendas/Mujer/TopCortoCueroRojo.png" alt="Top Corto Cuero Rojo">
+  <button>AGREGAR</button>
+  <h3>Top Corto Cuero Rojo</h3>
+  <p>S/ 119.90</p>
+</div>
+
+<div class="producto"
+     data-id="m09"
+     data-img="../../Imagenes/Prendas/Mujer/PoloCasual58.png"
+     data-nombre="Polo Casual 58"
+     data-precio="S/ 119.90"
+     data-marca="Inka Nova"
+     data-modelo="Polo"
+     data-tipo="Polos"
+     data-genero="Mujer"
+     data-material=""
+     data-estilo=""
+     data-mangas="Manga Corta"
+     data-temporada="Todo el año">
+  <img src="../../Imagenes/Prendas/Mujer/PoloCasual58.png" alt="Polo Casual 58">
+  <button>AGREGAR</button>
+  <h3>Polo Casual 58</h3>
+  <p>S/ 119.90</p>
+</div>
+
+<div class="producto"
+     data-id="m10"
+     data-img="../../Imagenes/Prendas/Mujer/PoloCasualAllThingsGrow.png"
+     data-nombre="Polo Casual All Things Grow"
+     data-precio="S/ 119.90"
+     data-marca="Inka Nova"
+     data-modelo="Polo"
+     data-tipo="Polos"
+     data-genero="Mujer"
+     data-material=""
+     data-estilo=""
+     data-mangas="Manga Corta"
+     data-temporada="Todo el año">
+  <img src="../../Imagenes/Prendas/Mujer/PoloCasualAllThingsGrow.png" alt="Polo Casual All Things Grow">
+  <button>AGREGAR</button>
+  <h3>Polo Casual All Things Grow</h3>
+  <p>S/ 119.90</p>
+</div>
+
+<div class="producto"
+     data-id="m11"
+     data-img="../../Imagenes/Prendas/Mujer/SudaderaCapuchaMalla.png"
+     data-nombre="Sudadera con Capucha y Malla"
+     data-precio="S/ 119.90"
+     data-marca="Inka Nova"
+     data-modelo="Sudadera"
+     data-tipo="Polos"
+     data-genero="Mujer"
+     data-material=""
+     data-estilo=""
+     data-mangas="Manga Larga"
+     data-temporada="Todo el año">
+  <img src="../../Imagenes/Prendas/Mujer/SudaderaCapuchaMalla.png" alt="Sudadera con Capucha y Malla">
+  <button>AGREGAR</button>
+  <h3>Sudadera con Capucha y Malla</h3>
+  <p>S/ 119.90</p>
+</div>
+
+<div class="producto"
+     data-id="m12"
+     data-img="../../Imagenes/Prendas/Mujer/PoloEstampadoLaHoraDeLanzar.png"
+     data-nombre="Casaca Cuero Mujer"
+     data-precio="S/ 119.90"
+     data-marca="Inka Nova"
+     data-modelo="Casaca"
+     data-tipo="Polos"
+     data-genero="Mujer"
+     data-material="Cuero"
+     data-estilo=""
+     data-mangas="Manga Larga"
+     data-temporada="Todo el año">
+  <img src="../../Imagenes/Prendas/Mujer/PoloEstampadoLaHoraDeLanzar.png" alt="Casaca Cuero Mujer">
+  <button>AGREGAR</button>
+  <h3>Casaca Cuero Mujer</h3>
+  <p>S/ 119.90</p>
+</div>
+
+
+<div class="producto"
+     data-id="m13"
+     data-img="../../Imagenes/Prendas/Mujer/CasacaPufferCorta.png"
+     data-nombre="Casaca Puffer Corta"
+     data-precio="S/ 119.90"
+     data-marca="Inka Nova"
+     data-modelo="Casaca"
+     data-tipo="Casacas"
+     data-genero="Mujer"
+     data-material=""
+     data-estilo="Puffer"
+     data-mangas="Manga Larga"
+     data-temporada="Invierno">
+  <img src="../../Imagenes/Prendas/Mujer/CasacaPufferCorta.png" alt="Casaca Puffer Corta">
+  <button>AGREGAR</button>
+  <h3>Casaca Puffer Corta</h3>
+  <p>S/ 119.90</p>
+</div>
+
+<div class="producto"
+     data-id="m14"
+     data-img="../../Imagenes/Prendas/Mujer/CasacaCueroMujer.png"
+     data-nombre="Casaca Cuero Mujer"
+     data-precio="S/ 119.90"
+     data-marca="Inka Nova"
+     data-modelo="Casaca"
+     data-tipo="Casacas"
+     data-genero="Mujer"
+     data-material="Cuero"
+     data-estilo=""
+     data-mangas="Manga Larga"
+     data-temporada="Todo el año">
+  <img src="../../Imagenes/Prendas/Mujer/CasacaCueroMujer.png" alt="Casaca Cuero Mujer">
+  <button>AGREGAR</button>
+  <h3>Casaca Cuero Mujer</h3>
+  <p>S/ 119.90</p>
+</div>
+
+        </div>
+    </section>
+
+
+           <!-- VENTANA EMERGENTE DEL PRODUCTO -->
+<div id="modal-producto" class="modal hidden">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="cerrarModal()">×</span>
+      <div class="modal-info">
+        <img id="modal-img" src="" alt="Producto">
+        <div class="modal-detalles">
+          <h2 id="modal-nombre"></h2>
+          <p id="modal-precio" class="precio"></p>
+  
+          <div class="tallas">
+            <span class="talla active" onclick="seleccionarTalla(this)">S</span>
+            <span class="talla" onclick="seleccionarTalla(this)">M</span>
+            <span class="talla" onclick="seleccionarTalla(this)">L</span>
+            <span class="talla" onclick="seleccionarTalla(this)">XL</span>
+          </div>
+  
+          <div class="botones">
+            <button class="btn-verde">Finalizar Pedido</button>
+            <button class="btn-carrito" onclick="agregarAlCarritoDesdeModal()">Agregar al Carrito</button>
+          </div>
+  
+          <table class="tabla-descripcion">
+            <tr><th>Marca</th><td id="modal-marca"></td></tr>
+            <tr><th>Modelo</th><td id="modal-modelo"></td></tr>
+            <tr><th>Tipo</th><td id="modal-tipo"></td></tr>
+            <tr><th>Género</th><td id="modal-genero"></td></tr>
+            <tr><th>Material</th><td id="modal-material"></td></tr>
+            <tr><th>Estilo</th><td id="modal-estilo"></td></tr>
+            <tr><th>Mangas</th><td id="modal-mangas"></td></tr>
+            <tr><th>Temporada</th><td id="modal-temporada"></td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <script>
+        // Abrir modal al hacer clic en imagen de producto
+        document.querySelectorAll('.producto img').forEach(img => {
+          img.addEventListener('click', () => {
+            const p = img.closest('.producto');
+      
+            document.getElementById('modal-img').src = p.dataset.img;
+            document.getElementById('modal-nombre').textContent = p.dataset.nombre;
+            document.getElementById('modal-precio').textContent = p.dataset.precio;
+            document.getElementById('modal-marca').textContent = p.dataset.marca;
+            document.getElementById('modal-modelo').textContent = p.dataset.modelo;
+            document.getElementById('modal-tipo').textContent = p.dataset.tipo;
+            document.getElementById('modal-genero').textContent = p.dataset.genero;
+            document.getElementById('modal-material').textContent = p.dataset.material;
+            document.getElementById('modal-estilo').textContent = p.dataset.estilo;
+            document.getElementById('modal-mangas').textContent = p.dataset.mangas;
+            document.getElementById('modal-temporada').textContent = p.dataset.temporada;
+      
+            // Reset tallas
+            document.querySelectorAll('.talla').forEach(t => t.classList.remove('active'));
+            document.querySelector('.talla').classList.add('active'); // Por defecto "S"
+      
+            document.getElementById('modal-producto').classList.remove('hidden');
+          });
+        });
+      
+        // Cerrar modal
+        function cerrarModal() {
+          document.getElementById('modal-producto').classList.add('hidden');
+        }
+      
+        // Selección de talla
+        function seleccionarTalla(elem) {
+          document.querySelectorAll('.talla').forEach(t => t.classList.remove('active'));
+          elem.classList.add('active');
+        }
+
+
+// Filtrado de productos
+const botonesFiltro = document.querySelectorAll('.filtro-btn');
+const productos = document.querySelectorAll('.producto');
+
+botonesFiltro.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // Activar visualmente el botón seleccionado
+    botonesFiltro.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const categoria = btn.dataset.filtro;
+
+    productos.forEach(p => {
+      const tipo = p.dataset.tipo; // usa el data-tipo del HTML
+      if (tipo === categoria) {
+        p.style.display = 'block';
+      } else {
+        p.style.display = 'none';
+      }
+    });
+  });
+});
+
+
+        // Leer el parámetro "tipo" desde la URL si existe
+const urlParams = new URLSearchParams(window.location.search);
+const tipoDesdeUrl = urlParams.get('tipo');
+
+if (tipoDesdeUrl) {
+  // Simular clic en el botón correspondiente al tipo
+  const btnCorrespondiente = document.querySelector(`.filtro-btn[data-filtro="${tipoDesdeUrl}"]`);
+  if (btnCorrespondiente) {
+    btnCorrespondiente.click(); // Dispara el mismo filtro
+  }
+}
+      </script>
+
+
+
+
+<script>
+  function agregarAlCarritoDesdeModal() {
+    const nombre = document.getElementById("modal-nombre").textContent;
+    const imagen = document.getElementById("modal-img").src;
+    const precio = document.getElementById("modal-precio").textContent;
+    const talla = document.querySelector(".talla.active").textContent;
+
+    const productoOriginal = Array.from(document.querySelectorAll(".producto")).find(p => p.dataset.nombre === nombre);
+
+    if (!productoOriginal) {
+      alert("Error al identificar el producto.");
+      return;
+    }
+
+    const producto = {
+      id: productoOriginal.dataset.id,
+      nombre,
+      imagen,
+      precio,
+      talla,
+      cantidad: 1
+    };
+
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+    const index = carrito.findIndex(p => p.id === producto.id && p.talla === producto.talla);
+    if (index !== -1) {
+      carrito[index].cantidad += 1;
+    } else {
+      carrito.push(producto);
+    }
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+    alert("Producto agregado al carrito.");
+  }
+</script>
+
+
+
+</body>
+</html>
